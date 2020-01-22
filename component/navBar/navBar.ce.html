@@ -20,14 +20,24 @@
             <div class="navbar-item">
                 <div class="field is-grouped">
                     <p class="control">
-                        <a class="bd-tw-button button is-primary" data-social-network="Twitter" data-social-action="tweet"
-                           data-social-target="https://bulma.io" target="_blank"
-                           href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                        <a class="bd-tw-button button is-primary" target="_self"
+                           href="./creatorDashboard">
                               <span class="icon">
                                 <i class="fas fa-search"></i>
                               </span>
                             <span>
                             DISCOVER CREATORS
+                          </span>
+                        </a>
+                    </p>
+                    <p class="control" v-if="logStatus === 'SIGN OUT'">
+                        <a class="bd-tw-button button is-primary" target="_self"
+                           href="./userProfile">
+                              <span class="icon">
+                                <i class="fas fa-user-cog"></i>
+                              </span>
+                            <span>
+                                {{userToken}}
                           </span>
                         </a>
                     </p>

@@ -1,12 +1,13 @@
 <div class="modal" v-bind:class="{ 'is-active': activeStatus }">
     <div class="modal-background" @click="closeModal"></div>
-    <div class="modal-card">
+    <div class="modal-card" >
         <header class="modal-card-head">
             <p class="modal-card-title">Modal title</p>
             <button class="delete" aria-label="close" @click="closeModal"></button>
         </header>
         <section class="modal-card-body">
             <h4 class="subtitle is-5 has-text-danger" v-if="valid === false">THERE CURRENTLY ISN'T AN ACCOUNT WITH THAT COMBINATION</h4>
+            <h4 class="subtitle is-5 has-text-danger" v-if="loginAttempts > 0">LOGIN FAILED. {{loginAttempts}} ATTEMPTS</h4>
             <div class="field">
                 <p class="control has-icons-left has-icons-right">
                     <input v-model="userName" class="input" type="text" placeholder="username">
@@ -48,6 +49,7 @@
         </section>
         <footer class="modal-card-foot has-text-left">
             <button class="button is-success" @click="captureForm({userName, password, email})">SIGN IN</button>
+            <button class="button is-info" v-if="loginAttempts > 0" @click="newAccount">CREATE NEW ACCOUNT</button>
             <button class="button is-warning" v-if="valid === false" @click="registerUser({userName, password, email, confirmPassword})">REGISTER</button>
             <button class="button is-danger" @click="closeModal">CANCEL</button>
         </footer>

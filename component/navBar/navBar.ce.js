@@ -3,7 +3,7 @@ Vue.component('navBar', {
    data: function () {
       return{
          logStatus: typeof localStorage.token === 'undefined' ? 'SIGN IN': 'SIGN OUT',
-         // tokenStatus: typeof localStorage.token !== 'undefined' ? localStorage.token : false
+         userToken: typeof localStorage.token !== 'undefined' ? localStorage.user : 'NO USER'
       }
    },
    mounted: function (){
@@ -18,6 +18,7 @@ Vue.component('navBar', {
       signOut(){
          delete localStorage.token;
          this.logStatus = 'SIGN IN';
+         window.location = '';
       }
    }
 });

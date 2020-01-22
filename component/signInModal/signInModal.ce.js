@@ -9,7 +9,8 @@ Vue.component('signInModal', {
             email: '',
             localUser: [],
             valid: '',
-            state: 'login'
+            state: 'login',
+            loginAttempts: 0
         }
     },
     mounted() {
@@ -18,32 +19,35 @@ Vue.component('signInModal', {
         });
     },
     methods: {
-        closeModal(reset) {
-            if (reset) {
-                this.userName = '';
-                this.password = '';
-            }
+        closeModal() {
+            this.userName = '';
+            this.email = '';
+            this.password = '';
+            this.confirmPassword = '';
             this.activeStatus = false;
         },
         captureForm: function (credentials) {
             this.localUser.push({userName: credentials.userName, password: credentials.password});
             this.login(this.localUser[0]);
-            if (this.valid) {
-                this.closeModal(true);
-            } else {
-                this.password = '';
-                this.state = 'register';
-            }
+
         },
         login(credentials, logout = false) {
             api.post(this.state, credentials).then(res => {
                 this.localUser.response = res.data;
                 localStorage.token = this.localUser.response.token;
+                localStorage.user = res.data.user.userName;
                 this.valid = true;
                 this.$root.$emit('updateButton', 'SIGN OUT');
-                this.closeModal(true);
+                this.closeModal();
             }).catch(err => {
-                this.valid = false;
+                if (typeof err !== 'undefined') {
+                    if (this.loginAttempts === 3) {
+                        //verifies if login worked.
+                        this.valid = false;
+                    }
+                    this.password = '';
+                    this.loginAttempts++;
+                }
             });
         },
         registerUser(userInfo) {
@@ -51,8 +55,11 @@ Vue.component('signInModal', {
                 delete userInfo.confirmPassword;
                 this.confirmPassword = '';
                 this.login(userInfo);
-                console.log(this.localUser);
             }
+        },
+        newAccount() {
+            this.valid = false;
+            this.loginAttempts = 0;
         }
     }
 });
