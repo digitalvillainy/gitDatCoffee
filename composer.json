@@ -1,0 +1,42 @@
+{
+    "name": "sroehrl/neoan3",
+    "description": "the efficient PHP framework",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+        "mnsami/composer-custom-directory-installer": "1.1.*",
+        "neoan3-apps/ops": "^1",
+        "neoan3-apps/db": "^0.2.1",
+        "neoan3-model/index": "^0.0.1",
+        "neoan3-apps/transformer": "^1",
+        "neoan3-model/user": "dev-master",
+        "neoan3-apps/stateless": "dev-master",
+        "neoan3-apps/session": "dev-master",
+        "neoan3-apps/cache": "dev-master",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "neoan",
+            "email": "neoan@neoan.us"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "./frame/{$name}": [],
+            "./model/{$name}": [
+                "neoan3-model/index",
+                "neoan3-model/user"
+            ],
+            "./component/{$name}": []
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sroehrl/neoan3-userModel.git"
+        }
+    ]
+}

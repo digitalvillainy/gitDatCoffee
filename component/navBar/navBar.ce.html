@@ -1,0 +1,52 @@
+<nav class="navbar is-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="./">
+            <!--TODO: Update with a new icon-->
+            <div class="columns">
+                <div class="column is-one-fifth">
+                    <span class="icon i">
+                        <i class="fas fa-lg fa-mug-hot"></i>
+                    </span>
+                </div>
+                <div class="column">
+                    <p class="title is-5 has-text-light">gitDat.coffee</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu is-two-fifths">
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button is-primary" data-social-network="Twitter" data-social-action="tweet"
+                           data-social-target="https://bulma.io" target="_blank"
+                           href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                              <span class="icon">
+                                <i class="fas fa-search"></i>
+                              </span>
+                            <span>
+                            DISCOVER CREATORS
+                          </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-success" v-if="logStatus === 'SIGN IN'" v-on:click="signIn">
+                          <span class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                          </span>
+                            <span>{{logStatus}}</span>
+                        </a>
+                        <a class="button is-success" v-if="logStatus === 'SIGN OUT'" v-on:click="signOut">
+                          <span class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                          </span>
+                            <span>{{logStatus}}</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

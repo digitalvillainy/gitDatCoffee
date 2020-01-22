@@ -1,0 +1,512 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3b9ea82aeabaac92761b1d60150c80e2",
+    "packages": [
+        {
+            "name": "firebase/php-jwt",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "20f37291b90ddcad3e9a56b6bd1798bd80336055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/20f37291b90ddcad3e9a56b6bd1798bd80336055",
+                "reference": "20f37291b90ddcad3e9a56b6bd1798bd80336055",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "time": "2019-12-17T20:19:28+00:00"
+        },
+        {
+            "name": "mnsami/composer-custom-directory-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnsami/composer-custom-directory-installer.git",
+                "reference": "1ccaf2da421dd9f6bcec4631c38e69e67677125f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnsami/composer-custom-directory-installer/zipball/1ccaf2da421dd9f6bcec4631c38e69e67677125f",
+                "reference": "1ccaf2da421dd9f6bcec4631c38e69e67677125f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Composer\\CustomDirectoryInstaller\\LibraryPlugin",
+                    "Composer\\CustomDirectoryInstaller\\PearPlugin",
+                    "Composer\\CustomDirectoryInstaller\\PluginPlugin"
+                ],
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\CustomDirectoryInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mina Nabil Sami",
+                    "email": "mina.nsami@gmail.com"
+                }
+            ],
+            "description": "A composer plugin, to help install packages of different types in custom paths.",
+            "keywords": [
+                "composer",
+                "composer-installer",
+                "composer-plugin"
+            ],
+            "time": "2017-08-14T19:50:19+00:00"
+        },
+        {
+            "name": "neoan3-apps/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-cache.git",
+                "reference": "440e6e461a405ca3f6946c39202d780eebbf09c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-cache/zipball/440e6e461a405ca3f6946c39202d780eebbf09c7",
+                "reference": "440e6e461a405ca3f6946c39202d780eebbf09c7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "neoan",
+                    "email": "neoan@neoan.us"
+                }
+            ],
+            "description": "Caching based on output buffer",
+            "time": "2019-06-11T22:20:33+00:00"
+        },
+        {
+            "name": "neoan3-apps/db",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-db.git",
+                "reference": "b2859d08f44b20f8174fabfba51a4e8becec70f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-db/zipball/b2859d08f44b20f8174fabfba51a4e8becec70f0",
+                "reference": "b2859d08f44b20f8174fabfba51a4e8becec70f0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mysqli": "*",
+                "php": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Roehrl",
+                    "homepage": "http://neoan.us"
+                }
+            ],
+            "description": "neoan3 mysqli class",
+            "time": "2019-09-10T17:54:43+00:00"
+        },
+        {
+            "name": "neoan3-apps/jwt",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-jwt.git",
+                "reference": "c3b560daf4f484e49491a931dd7f89fc344763e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-jwt/zipball/c3b560daf4f484e49491a931dd7f89fc344763e8",
+                "reference": "c3b560daf4f484e49491a931dd7f89fc344763e8",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Roehrl",
+                    "homepage": "http://neoan.us"
+                }
+            ],
+            "description": "neoan3 wrapper for JSON WEB TOKEN using Firebase",
+            "time": "2019-07-13T17:33:36+00:00"
+        },
+        {
+            "name": "neoan3-apps/ops",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-ops.git",
+                "reference": "d06fb935eb04b517b783003128ff8579e17e151c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-ops/zipball/d06fb935eb04b517b783003128ff8579e17e151c",
+                "reference": "d06fb935eb04b517b783003128ff8579e17e151c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "neoan3 common string operations helper class",
+            "time": "2019-12-07T22:14:58+00:00"
+        },
+        {
+            "name": "neoan3-apps/session",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-session.git",
+                "reference": "f7d70d470f87b30b6bea0cecfe7ef66f3f123d40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-session/zipball/f7d70d470f87b30b6bea0cecfe7ef66f3f123d40",
+                "reference": "f7d70d470f87b30b6bea0cecfe7ef66f3f123d40",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "neoan3 session class",
+            "time": "2019-08-16T20:55:39+00:00"
+        },
+        {
+            "name": "neoan3-apps/stateless",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-stateless.git",
+                "reference": "2cf58336afdd37d7250ed0dc667e3a418f19c04e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-stateless/zipball/2cf58336afdd37d7250ed0dc667e3a418f19c04e",
+                "reference": "2cf58336afdd37d7250ed0dc667e3a418f19c04e",
+                "shasum": ""
+            },
+            "require": {
+                "neoan3-apps/jwt": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "neoan",
+                    "email": "neoan@neoan.us"
+                }
+            ],
+            "description": "stateless authentication / verification for neoan3",
+            "time": "2019-08-16T20:53:43+00:00"
+        },
+        {
+            "name": "neoan3-apps/transformer",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-transformer.git",
+                "reference": "49b825a47159887f17841f9927424a3c3acd419d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-transformer/zipball/49b825a47159887f17841f9927424a3c3acd419d",
+                "reference": "49b825a47159887f17841f9927424a3c3acd419d",
+                "shasum": ""
+            },
+            "require": {
+                "neoan3-apps/db": "^0.2.1",
+                "neoan3-model/index": "^0.0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neoan3\\Apps\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Roehrl",
+                    "email": "neoan@neoan.us"
+                }
+            ],
+            "description": "Model abstraction utilizing neoan3's model transformers",
+            "time": "2019-09-28T00:28:18+00:00"
+        },
+        {
+            "name": "neoan3-model/index",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-indexModel.git",
+                "reference": "3d432ebfd56cbbe794a9f6a6fc912b173d496acf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-indexModel/zipball/3d432ebfd56cbbe794a9f6a6fc912b173d496acf",
+                "reference": "3d432ebfd56cbbe794a9f6a6fc912b173d496acf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "mnsami/composer-custom-directory-installer": "1.1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4@dev"
+            },
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "./frame/{$name}": [],
+                    "./model/{$name}": [],
+                    "./component/{$name}": []
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-09-13T23:01:22+00:00"
+        },
+        {
+            "name": "neoan3-model/user",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroehrl/neoan3-userModel.git",
+                "reference": "ddeb1ab73ce5a42213558a4a5824f8414495a782"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroehrl/neoan3-userModel/zipball/ddeb1ab73ce5a42213558a4a5824f8414495a782",
+                "reference": "ddeb1ab73ce5a42213558a4a5824f8414495a782",
+                "shasum": ""
+            },
+            "require": {
+                "mnsami/composer-custom-directory-installer": "1.1.*",
+                "neoan3-apps/db": "^0.2",
+                "neoan3-apps/ops": "^1.0",
+                "neoan3-apps/transformer": "^1",
+                "neoan3-model/index": "^0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4@dev"
+            },
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "./frame/{$name}": [],
+                    "./model/{$name}": [
+                        "neoan3-model/index"
+                    ],
+                    "./component/{$name}": []
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "demo user model",
+            "support": {
+                "source": "https://github.com/sroehrl/neoan3-userModel/tree/master",
+                "issues": "https://github.com/sroehrl/neoan3-userModel/issues"
+            },
+            "time": "2019-10-07T23:55:48+00:00"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "cc8da73fa21f59ee57281bf591d223fe8971b98e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/cc8da73fa21f59ee57281bf591d223fe8971b98e",
+                "reference": "cc8da73fa21f59ee57281bf591d223fe8971b98e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "time": "2019-12-28T10:09:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "neoan3-model/user": 20,
+        "neoan3-apps/stateless": 20,
+        "neoan3-apps/session": 20,
+        "neoan3-apps/cache": 20,
+        "phpmailer/phpmailer": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.0",
+        "ext-json": "*"
+    },
+    "platform-dev": []
+}
