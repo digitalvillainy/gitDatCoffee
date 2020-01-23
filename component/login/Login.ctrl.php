@@ -4,6 +4,7 @@
 namespace Neoan3\Components;
 
 use Neoan3\Apps\Stateless;
+use Neoan3\Apps\Session;
 use Neoan3\Frame\Cafe;
 use Neoan3\Model\UserModel;
 use Neoan3\Apps\DbException;
@@ -20,8 +21,7 @@ class Login extends Cafe
     function postLogin(array $credentials)
     {
         $user = UserModel::login($credentials);
-        $jwt = Stateless::assign($user['id'],'user');
+        $jwt = Stateless::assign($user['id'],'user', ['exp' => time() + (2 * 60 * 60 * 1000)]);
         return ['user'=>$user, 'token'=> $jwt];
     }
-
 }

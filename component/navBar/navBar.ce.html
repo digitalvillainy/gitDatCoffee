@@ -32,7 +32,7 @@
                     </p>
                     <p class="control" v-if="logStatus === 'SIGN OUT'">
                         <a class="bd-tw-button button is-primary" target="_self"
-                           href="./userProfile">
+                           v-on:click="redirect">
                               <span class="icon">
                                 <i class="fas fa-user-cog"></i>
                               </span>

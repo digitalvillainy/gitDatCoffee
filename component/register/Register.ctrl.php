@@ -46,6 +46,13 @@ class Register extends Cafe {
         return ['token' => $jwt];
     }
 
+    function getRegister()
+    {
+        $jwt = Stateless::validate();
+        $user = UserModel::get($jwt['jti']);
+        return ['user'=> $user, 'token' => $jwt];
+    }
+
     /**
      * @param $body
      *
